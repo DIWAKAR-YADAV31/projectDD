@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+       <link rel="stylesheet" href="projectcurrency.css">
+       <script src="projectcurrency.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <h1>currency conventer</h1>
+    <p>Enter INR values to convert into $USDs</p>
+    <label for="rupees">Rupees*</label>
+    <div class="aside">
+        <img class="india" src="https://th.bing.com/th/id/R.607b9f69862d76af04b474113c0c7ff5?rik=lfnOsbv7mhDNbQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fb%2fbc%2fFlag_of_India.png&ehk=Pk5lH0C%2fhstFahWfb15vLjtrJb3DslIU4%2fAQneo9IIM%3d&risl=&pid=ImgRaw&r=0">
+        <input type="numbers" id="rupees" placeholder="enter rupees to convert">
+
+    </div>
+    <button onclick="convert()">Convert</button>
+
+    <div class="aside">
+        <img class="america" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_the_United_States_%28Web_Colors%29.svg/1920px-Flag_of_the_United_States_%28Web_Colors%29.svg.png">
+        <p id="result">Your Answer</p>
+    </div>
+    </div>
+    
+</body>
+</html>

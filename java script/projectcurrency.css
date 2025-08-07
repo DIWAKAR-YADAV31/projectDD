@@ -1,0 +1,23 @@
+.container{
+    margin:auto;
+    background-color: hsl(208, 100%, 97%);
+    height:600px;
+    width:auto;
+}
+.india{
+height:100px;
+width:200px;
+padding-right: null;
+border-radius: 100%;
+}
+.america{
+    height:100px;
+    width:200px;
+    border-radius:100%
+}
+body{
+   text-align: auto;
+}
+.side{
+    display:flex;
+}
