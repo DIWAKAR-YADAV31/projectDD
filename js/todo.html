@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My To-Do List</h2>
+    <form onsubmit="additem(event)">
+        <input type="text" id="iteminput" placeholder="enter...." required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="list"></ul>
+    <script>
+        function additem(event){
+            event.preventDefault();//stop free reloading
+
+            //one line to get the input value 
+            let itemText=document.getElementById("iteminput").value;
+            //create<li> and add text
+                let li=document.createElement("li");
+                li.innerText=itemText;
+ 
+                //add <li>to the <ul>
+                    document.getElementById("list").appendChild(li);
+
+                    //clear the inputfield
+                    document.getElementById("iteminput").value="";
+
+
+        }
+    </script>
+</body>
+</html>

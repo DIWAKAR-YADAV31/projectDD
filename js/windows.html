@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charge background</title>
+</head>
+<body>
+    <p id="count">500</p>
+    <button onclick="increase()">increase</button>
+     <button onclick="decrease()">decrease</button>
+      <button onclick="reset()">reset</button>
+    <script>
+         
+
+        let num=500;
+        function increase(){
+            num++;
+            document.getElementById("count").innerText=num;
+             document.body.style.background="red";
+        }
+        function decrease(){
+            num--;
+            document.getElementById("count").innerText=num;
+             document.body.style.background="yellow";
+
+        }
+        function reset(){
+            num=500;
+            document.getElementById("count").innerText=num;
+             document.body.style.background="green";
+
+        }
+
+        
+    </script>
+</body>
+</html>

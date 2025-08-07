@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=6, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">This is a secrete message</p>
+    <button onclick="hideText()">hide</button>
+    <button onclick="showText()">show</button>
+    <script>
+        function hideText(){
+            document.getElementById("text").style.display="none";
+        }
+        function showText(){
+            document.getElementById("text").style.display="block";
+        }
+    </script>
+</body>
+</html>
