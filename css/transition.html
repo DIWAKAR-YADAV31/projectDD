@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: blue;
+            height:50px;
+            width:100px;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item1{
+            background-color: black;
+            height:50px;
+            width:100px;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item2{
+            background-color: green;
+            height:50px;
+            width:100px;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item:hover{
+            background-color: brown;
+            /*transform: rotate(360deg);*/
+            transform: scale(9);
+            /*transform:skew(35deg);*/
+            /*transform: translate(500px,200px);*/
+        }
+        .item1:hover{
+            background-color: white;
+            transform: rotate(360deg);
+            /*transform: scale(9);*/
+            /*transform:skew(35deg);*/
+            /*transform: translate(500px,200px);*/
+        }
+        .item2:hover{
+            background-color:blueviolet;
+            /*transform: rotate(360deg);*/
+            /*transform: scale(9);*/
+            transform:skew(35deg);
+            /*transform: translate(500px,200px);*/
+        }
+         body{
+            height: 50vh;
+            width:50vh;
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            background-color:rgb(214,225,120);
+            margin: 100px;
+            padding:2px;
+            border: 10px,solid blue;
+         }
+    </style>
+</head>
+<body>
+    
+   <label>Scale:<div class="item">🙈</div></label>
+   <label>Rotate: <div class="item1">🙉</div></label>
+    <label>Skew:<div class="item2">🙊</div></label> 
+    
+</body>
+</html>

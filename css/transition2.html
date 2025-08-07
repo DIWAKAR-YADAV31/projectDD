@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doc</title>
+        <link rel="stylesheet" href="12.css">
+        <style>
+            .container{
+                background-color: lightcyan;
+                padding: 10px;
+                margin: 10px;
+                margin-top: 20px;
+            }
+
+            .box{
+                padding-left: 25px;
+                padding-right: 25px;
+                text-align: center;
+                font-size: 18px;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                font-family: sans-serif;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .pair{
+                padding-left: 180px;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                justify-content: space-between;
+                padding-right: 38%;
+            }
+
+            .box1{
+                background-color: red;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .box2{
+                background-color: yellow;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .box3{
+                background-color: green;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .box4{
+                background-color: blue;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .box1:hover{
+                background-color: darkred;
+                transform: scale(1.05);
+            }
+
+            .box2:hover{
+                background-color: yellowgreen;
+                transform: rotate(-2deg);
+            }
+
+            .box3:hover{
+                background-color: darkgreen;
+                transform: translate(10px, 12px)
+            }
+
+            .box4:hover{
+                background-color: darkblue;
+                transform: skew(-10deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="pair">
+                    <label>Scale: </label>
+                    <div class="box1">Click Here</div>
+                </div>
+                <div class="pair">
+                    <label>Rotate </label>
+                    <div class="box2">Click Here</div>
+                </div>
+                <div class="pair">
+                    <label>Translate: </label>
+                    <div class="box3">Click Here</div>
+                </div>
+                <div class="pair">
+                    <label>Skew: </label>
+                    <div class="box4">Click Here</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

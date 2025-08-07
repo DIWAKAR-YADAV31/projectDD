@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2</title>
+    <style>
+        h1{
+            color:aqua
+        }
+        container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 20px;
+    }
+        .container{
+
+          display: flex;
+          justify-content: space-around;
+          background-color: #333;
+           padding: 10px;        }
+        .container a {
+           text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: grid;
+      grid-column: auto;
+      border-radius: 5px;
+
+        }
+        .container a:hover {
+      background-color: #0056b3;
+    } 
+    .a{
+      display: grid;
+      grid-column: auto;
+      color:aliceblue
+    }
+    
+    </style>  
+</head>
+<body>
+    <H1>DD Learning</H1>
+   <div class="container">
+    <div class="a">
+  <a href="html">HTML</a> 
+      <pre>html tags</pre>
+      <pre>html tables</pre>
+      <pre>html frames</pre>
+  </div>
+  <a href="css">CSS</a>
+  <a href="java">JAVA</a>
+  <a href="python">PYTHON</a>
+  <a href="Nodejs">NODEJS</a>
+  <a href="c++">C++</a>
+</div>
+</body>
+</html>

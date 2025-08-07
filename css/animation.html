@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .zoom-box{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+            position: relative;
+            animation-name: zoompic;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+        }
+
+        @keyframes zoompic {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform:scale(1.3);
+            }
+            100%{
+                transform:scale(1.5)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="zoom-box"></div>
+</body>
+</html>

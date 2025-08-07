@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .item1{
+        height:50px;
+        width:50px;
+        background-color: blueviolet;
+        animation-name: DD;
+        animation-iteration-count: 2;
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+        
+        
+        }
+        @keyframes DD {
+            0%{
+                background-color: aquamarine;
+                left: 0px;
+                
+            }
+            100%{
+                
+                transform: translate(300px);
+                
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item1"></div>
+</body>
+</html>

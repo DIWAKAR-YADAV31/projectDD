@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item5{
+            height:100px;
+            width:100px;
+            background-color: red;
+            
+            animation-name: top;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            position:relative;
+            animation-iteration-count: 4;
+        
+            margin-left: 700px;
+            margin-top: 125px;
+        
+        }
+        
+        @keyframes top {
+            0%{
+                spin:0px;
+                transform: rotate(360deg);
+            }
+            50%{
+                spin:100px;
+            }
+            100%{
+                spin:0px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item5"></div>
+</body>
+</html>
